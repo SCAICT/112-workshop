@@ -1,0 +1,55 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>課程簡報</title>
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+        />
+        <link rel="stylesheet" href="/dist/reveal.css" />
+        <link
+            rel="stylesheet"
+            href="/dist/theme/league.css"
+            id="theme"
+        />
+    </head>
+    <body>
+        <div class="reveal">
+            <div class="slides">
+                <section
+                    data-markdown=""
+                    data-separator="^---$"
+                    data-separator-vertical="^--$"
+                    data-separator-notes="^Note:"
+                ></section>
+            </div>
+        </div>
+
+        <script src="/dist/reveal.js"></script>
+        <script src="/plugin/markdown/markdown.js"></script>
+        <script>
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            const course = getQueryParam("course");
+            // redirect to home page if course is not provided
+            if (!course) {
+                window.location.href = "/";
+            }
+            const markdownFile = `/slides/${course}.md`;
+
+            document
+                .querySelector("section")
+                .setAttribute("data-markdown", markdownFile);
+
+            Reveal.initialize({
+                plugins: [RevealMarkdown],
+            });
+        </script>
+    </body>
+</html>
