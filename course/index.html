@@ -1,16 +1,32 @@
 <!-- @format -->
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>課程簡報</title>
+
+        <title>reveal.js – The HTML Presentation Framework</title>
+
         <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+            name="description"
+            content="A framework for easily creating beautiful presentations using HTML"
         />
+        <meta name="author" content="Hakim El Hattab" />
+
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/dist/reset.css" />
         <link rel="stylesheet" href="/dist/reveal.css" />
-        <link rel="stylesheet" href="/dist/theme/moon.css" id="theme" />
+        <link rel="stylesheet" href="/dist/theme/black.css" id="theme" />
+
+        <!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="/plugin/highlight/monokai.css" />
         <style>
             :root {
                 --r-heading-font: system-ui, -apple-system, BlinkMacSystemFont,
@@ -20,8 +36,18 @@
                     "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
                     "Helvetica Neue", sans-serif;
             }
+            .reveal pre code {
+                padding: 1rem;
+            }
+            .reveal code:not([data-highlighted="yes"] ) {
+                background-color: #373737;
+                color: #f8f8f2;
+                padding: 0.3rem 0.5rem;
+                border-radius: 0.3em;
+            }
         </style>
     </head>
+
     <body>
         <div class="reveal">
             <div class="slides">
@@ -35,7 +61,11 @@
         </div>
 
         <script src="/dist/reveal.js"></script>
+        <script src="/plugin/zoom/zoom.js"></script>
+        <script src="/plugin/notes/notes.js"></script>
+        <script src="/plugin/search/search.js"></script>
         <script src="/plugin/markdown/markdown.js"></script>
+        <script src="/plugin/highlight/highlight.js"></script>
         <script>
             function getQueryParam(param) {
                 const urlParams = new URLSearchParams(window.location.search);
@@ -53,8 +83,22 @@
                 .querySelector("section")
                 .setAttribute("data-markdown", markdownFile);
 
+            // Also available as an ES module, see:
+            // https://revealjs.com/initialization/
             Reveal.initialize({
-                plugins: [RevealMarkdown],
+                controls: true,
+                progress: true,
+                center: true,
+                hash: true,
+
+                // Learn about plugins: https://revealjs.com/plugins/
+                plugins: [
+                    RevealZoom,
+                    RevealNotes,
+                    RevealSearch,
+                    RevealMarkdown,
+                    RevealHighlight,
+                ],
             });
         </script>
     </body>
