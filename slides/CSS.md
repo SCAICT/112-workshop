@@ -170,13 +170,13 @@ background-position: 20% 40%; /*從左上開始算*/
 
 `background-size: contain;`
 
-<video style="width:100%;height:300px;border:2px solid #FFF" data-autoplay loop src="/slides/CSS/long.webp"></video></div>
+<video style="width:100%;height:300px;border:2px solid #FFF" data-autoplay loop src="../slides/CSS/long.webp"></video></div>
 
 <div style="flex:1;font-size:1rem">
 
 `background-size: cover;`
 
-<video style="width:100%;height:300px;border:2px solid #FFF;object-fit: cover;object-position: top;" data-autoplay loop src="/slides/CSS/long.webp"></video></div>
+<video style="width:100%;height:300px;border:2px solid #FFF;object-fit: cover;object-position: top;" data-autoplay loop src="../slides/CSS/long.webp"></video></div>
 </div>
 
 ---
