@@ -3,15 +3,41 @@
 點左邊stable build
 
 ---
+一直按下一步
+![](../slides/img/HTML/vscode下載1.png)
+
+---
+![](../slides/img/HTML/vscode下載2.png)
+
+---
+![](../slides/img/HTML/vscode下載3.png)
+
+---
+安裝完成大概會長這樣
+![](../slides/img/HTML/vscode安裝完成.png)
+
+---
+1. 按開啟一個資料夾
+2. 新增資料夾(快捷鍵:右鍵WF)
+3. 在資料夾內新增檔案index.html
+![](../slides/img/HTML/新增檔案.png)
+
+---
+1. 點左邊第五個延伸模組
+2. 下載live server
+![](../slides/img/HTML/下載live_server.png)
+
+---
+按右下角go live
+![](../slides/img/HTML/go_live.png)
+
+---
+現在你已經有一個網頁
 # HTML 教學
 
 ---
 
 # 第一個網站
-
-打開VSCode開啟一個資料夾，建立一個檔案叫做`index.html`
-（當然要取別的名字也可以）並在裡面隨便打點字
-我們到檔案總管找到這個檔案並打開，你的第一個網頁完成了
 
 > *網站講白就是一個要用瀏覽器打開的Word檔*
 
