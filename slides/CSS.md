@@ -1,5 +1,3 @@
-<!-- @format -->
-
 # CSS
 
 毛哥 EM
@@ -114,7 +112,7 @@ font-family: 微軟正黑體;
 </div>
 </div>
 
----
+--
 
 ## 文字粗細 font-weight
 
@@ -136,7 +134,7 @@ font-weight: 700; /* 粗體 */
 font-weight: 900;
 ```
 
----
+--
 
 ## text-decoration
 
@@ -190,7 +188,7 @@ background-position: 20% 40%; /*從左上開始算*/
 -   HEX - `#ff0000`
 -   HSL - `hsl(0,100%,50%)`
 
----
+--
 
 ### RGB/RGBA
 
@@ -201,7 +199,9 @@ alpha 不透明介於 0 ~ 1 之間
 範例: 半透明紫色 rgba(160, 32, 240, 0.5);
 ```
 
----
+--
+
+
 
 ### HEX
 
@@ -212,19 +212,23 @@ alpha 不透明介於 0 ~ 1 之間
 *   黑色:#000000
 *   白色:#ffffff
 
----
+--
 
 ### HSL
-
+<!-- .slide: data-auto-animate -->
 -   H : hue 色相 (0 是紅色 120 是綠色 240 是藍色)
 -   S : saturation 飽和度
 -   L : lightness 明度
+
 ```css
 color: hsl(0, 100%, 50%);
 ```
 
----
+--
 
+### HSL <!-- .element: style="color:hsl(var(--hhh), 100%, 50%)!important;" -->
+<!-- .slide: data-auto-animate -->
+H: <input type="range" min="1" max="360" value="0" oninput="document.documentElement.style.setProperty('--hhh', this.value)" />
 
 
 ---
@@ -237,44 +241,36 @@ color: hsl(0, 100%, 50%);
 -   vw/vh
 -   %
 
----
+--
 
 ### px
 
 相對顯示器的解析度，為絕對單位(pixel)
 
-![bg right](../slides/CSS/px示意圖.png)
-
----
+--
 
 ### em
 
 相對父元素的 m 寬度(預設 16px)
 
-![bg right h:99%](../slides/CSS/em示意圖.png)
-
----
+--
 
 ### rem
 
 相對根元素的 m 寬度(預設 16px)
 
-![bg right w:99%](../slides/CSS/rem示意圖.png)
-
----
+--
 
 ### vw/vh
 
 viewport（視口）寬/長度
 
----
+--
 
 ### %
 
 1. width 跟 height 的%基準是父層
 2. line-height 以本身文字行高為基準
-
-![bg right](img/%示意圖.png)
 
 ---
 
@@ -417,48 +413,4 @@ background: radial-gradient(ellipse at center, 顏色1, 顏色2);
 ```css
 background-color: FF0000;
 background-color: red; /* 背景為紅色 */
-```
-
----
-
-## float 語法
-
-```css
-float: 浮動方向;
-```
-
----
-
-### none
-
-```css
-float: none;
-```
-
-![be canter](https://user-images.githubusercontent.com/115127388/229823365-7920f770-768a-4621-a91c-c644154817b5.png)
-
----
-
-### right
-
-```css
-float: right;
-```
-
-![be canter](https://user-images.githubusercontent.com/115127388/229823290-5747c9ed-481c-4248-a1c7-d9d6d8bd58ab.png)
-
----
-
-### left
-
-```css
-float: left;
-```
-
-![be canter](https://user-images.githubusercontent.com/115127388/229823167-add28ca2-5699-470c-9dd2-337590676208.png)
-
----
-
-```
-
 ```
