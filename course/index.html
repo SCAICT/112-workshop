@@ -75,9 +75,9 @@
             const course = getQueryParam("course");
             // redirect to home page if course is not provided
             if (!course) {
-                window.location.href = "/";
+                window.location.href = "../";
             }
-            const markdownFile = `/slides/${course}.md`;
+            const markdownFile = `../slides/${course}.md`;
 
             document
                 .querySelector("section")
