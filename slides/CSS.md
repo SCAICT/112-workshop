@@ -10,7 +10,7 @@
 
 主要功能:美觀網站
 
-![](/slides/CSS/骨架、外觀、行為.png) <!-- .element: height="400px" -->
+![](../slides/CSS/骨架、外觀、行為.png) <!-- .element: height="400px" -->
 
 ---
 
@@ -207,7 +207,7 @@ alpha 不透明介於 0 ~ 1 之間
 
 十六進位（hexadecimal
 
-![](/slides/CSS/HEX.png)
+![](../slides/CSS/HEX.png)
 
 *   黑色:#000000
 *   白色:#ffffff
@@ -243,7 +243,7 @@ color: hsl(0, 100%, 50%);
 
 相對顯示器的解析度，為絕對單位(pixel)
 
-![bg right](/slides/CSS/px示意圖.png)
+![bg right](../slides/CSS/px示意圖.png)
 
 ---
 
@@ -251,7 +251,7 @@ color: hsl(0, 100%, 50%);
 
 相對父元素的 m 寬度(預設 16px)
 
-![bg right h:99%](/slides/CSS/em示意圖.png)
+![bg right h:99%](../slides/CSS/em示意圖.png)
 
 ---
 
@@ -259,7 +259,7 @@ color: hsl(0, 100%, 50%);
 
 相對根元素的 m 寬度(預設 16px)
 
-![bg right w:99%](/slides/CSS/rem示意圖.png)
+![bg right w:99%](../slides/CSS/rem示意圖.png)
 
 ---
 
