@@ -573,6 +573,8 @@ background: radial-gradient(ellipse at center, 顏色1, 顏色2);
 
 ---
 
+<!-- .slide: data-transition="zoom" -->
+
 玩得開心 (:
 
 <div style=font-size:1.5rem>
