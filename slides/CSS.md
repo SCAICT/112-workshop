@@ -6,14 +6,38 @@
 
 ---
 
+<div style="display:flex;">
+<div style="font-size:1.5rem;flex:1">
+
+<!-- .slide: data-background-image="../slides/img/CSS/avatar.webp" data-background-opacity="1" data-background-size="40%" data-background-position="80% bottom" data-transition="zoom" -->
+<div style=font-size:1em;margin:1em>
+關於我
+</div>
+
+## 毛哥EM
+<div style=font-size:1.2rem;margin:1rem>
+
+*數位創作 / 全端工程*
+
+</div>
+
+-   中電會 資訊組組長
+-   SITCON 2024 講師
+
+</div>
+<div style="font-size:1.5rem;flex:3">
+</div></div>
+
+---
+
 ## CSS 簡介
 
 主要功能:美觀網站
 
-![](../slides/CSS/骨架、外觀、行為.png) <!-- .element: height="400px" -->
+![](../slides/img/CSS/骨架、外觀、行為.png) <!-- .element: height="400px" -->
 
 ---
-
+<!-- .slide: data-auto-animate -->
 ## 範例 <!-- .element: style="color:red;" -->
 
 ```css
@@ -21,6 +45,22 @@ h1 {
     color: red;
 }
 ```
+
+---
+<!-- .slide: data-auto-animate -->
+## 一個 CSS 宣告包含
+
+
+```css
+h1 {
+    color: red;
+}
+```
+
+-   selector: 選擇器 (對象)
+-   declaration: 宣告
+-   property: 屬性 (要改的東西)
+-   value: 屬性值
 
 ---
 
@@ -52,21 +92,6 @@ h1 {
     <h1>標題</h1>
 </body>
 </html>
-```
-
----
-
-## 一個 CSS 宣告包含
-
--   selector: 選擇器 (對象)
--   declaration: 宣告
--   property: 屬性 (要改的東西)
--   value: 屬性值
-
-```css
-h1 {
-    color: red;
-}
 ```
 
 ---
@@ -172,13 +197,13 @@ background-position: 20% 40%; /*從左上開始算*/
 
 `background-size: contain;`
 
-<video style="width:100%;height:300px;border:2px solid #FFF" data-autoplay loop src="../slides/CSS/long.webp"></video></div>
+<video style="width:100%;height:300px;border:2px solid #FFF" data-autoplay loop src="../slides/img/CSS/long.webp"></video></div>
 
 <div style="flex:1;font-size:1rem">
 
 `background-size: cover;`
 
-<video style="width:100%;height:300px;border:2px solid #FFF;object-fit: cover;object-position: top;" data-autoplay loop src="../slides/CSS/long.webp"></video></div>
+<video style="width:100%;height:300px;border:2px solid #FFF;object-fit: cover;object-position: top;" data-autoplay loop src="../slides/img/CSS/long.webp"></video></div>
 
 </div>
 
@@ -258,7 +283,6 @@ L : lightness 明度
 
 <div  data-id="hsl" style="background:linear-gradient(90deg,hsl(0,100%,100%),hsl(0,100%,50%),hsl(0,100%,0%));height:100px"></div>
 
-
 --
 
 #### 套用到文字
@@ -328,9 +352,10 @@ viewport（視口）寬/長度
 
 ## 間距
 
-<!-- .slide: data-background-image="../slides/CSS/toilet.webp" data-background-opacity="0.4" -->
+<!-- .slide: data-background-image="../slides/img/CSS/toilet.webp" data-background-opacity="0.4" -->
 
 --
+
 <!-- .slide: data-auto-animate -->
 
 <div style="display:flex;">
@@ -355,6 +380,7 @@ margin 是指物件與物件之間的距離，通常用來調整物件之間的�
 </div>
 
 --
+
 <!-- .slide: data-auto-animate -->
 <div style="display:flex;">
 <div style="flex:1;">
@@ -379,6 +405,7 @@ margin: 10px 20px 30px 40px; /* 上右下左 */
 </div>
 
 --
+
 <!-- .slide: data-auto-animate -->
 <div style="display:flex;">
 <div style="flex:1;">
@@ -409,16 +436,17 @@ padding: 10px 20px 30px 40px; /* 上右下左 */
 
 ---
 
-
 ## box-sizing
 
-<!-- .slide: data-background-image="../slides/CSS/box-sizing.webp" data-background-opacity="0.4" data-auto-animate -->
+<!-- .slide: data-background-image="../slides/img/CSS/box-sizing.webp" data-background-opacity="0.4" data-auto-animate -->
 
 --
 
-<!-- .slide: data-background-image="../slides/CSS/box-sizing.webp" data-background-opacity="1" data-auto-animate -->
+<!-- .slide: data-background-image="../slides/img/CSS/box-sizing.webp" data-background-opacity="1" data-auto-animate -->
 
 --
+
+<!-- .slide: data-background-image="../slides/img/CSS/box-sizing.webp" data-background-opacity="0.4" data-auto-animate -->
 
 ### box 是什麼?
 
@@ -427,7 +455,9 @@ html 的每個元素都可被視作為一個盒子，然後可以針對這個盒
 --
 
 ### box-sizing
+
 <!-- .slide: data-auto-animate -->
+
 ```css" data-line-numbers="1-3
 width: 300px;
 padding: 30px;
@@ -435,11 +465,13 @@ box-sizing: content-box; /* 預設值 */
 box-sizing: border-box; /* padding 跟 border 會包含在內 */
 ```
 
-<div data-id="box1" style="background-color:#40a3e7;width:360px;height:100px;margin:2rem auto;font-size:1rem;">
---
+## <div data-id="box1" style="background-color:#40a3e7;width:360px;height:100px;margin:2rem auto;font-size:1rem;">
 
+--
 ### box-sizing
+
 <!-- .slide: data-auto-animate -->
+
 ```css" data-line-numbers="1-2,4
 width: 300px;
 padding: 30px;
@@ -461,7 +493,9 @@ box-sizing: border-box; /* padding 跟 border 會包含在內 */
 --
 
 ### 線性漸層 linear-gradient
+
 <!-- .slide: data-auto-animate -->
+
 ```css
 background: linear-gradient(方向, 顏色1 位置, 顏色2 位置);
 ```
@@ -469,17 +503,19 @@ background: linear-gradient(方向, 顏色1 位置, 顏色2 位置);
 --
 
 ### 線性漸層 linear-gradient
+
 <!-- .slide: data-auto-animate -->
+
 ```css
 background: linear-gradient(90deg, red, blue);
 ```
 
 <div data-id="box1"  style="background:linear-gradient(90deg,red,blue);height:100px"></div>
 
-
-
 --
+
 <!-- .slide: data-auto-animate -->
+
 #### 顏色位置重疊
 
 ```css
@@ -541,6 +577,6 @@ background: radial-gradient(ellipse at center, 顏色1, 顏色2);
 
 <div style=font-size:1.5rem>
 
-[GitHub](https://github.com/Edit-Mr) · [Instagram](https://instagram.com/elvisdragonmao) · [毛哥EM資訊密技](https://emtech.cc/)
+[GitHub](https://github.com/Edit-Mr) · [Instagram](https://instagram.com/elvisdragonmao) · [毛哥 EM 資訊密技](https://emtech.cc/)
 
 </div>
