@@ -129,3 +129,47 @@ hjkl #左下上右移動
 
 ### 教不完了，念指令好無聊，這些目前夠用了
 [這裡有教學](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
+
+---
+<!-- .slide: data-background-image="/slides/img/LinuxApplication/boss.jpg" data-background-opacity="0.4" data-auto-animate -->
+# process manager
+##### 大統領，你是系統的主宰
+
+--
+
+## htop
+```bat
+foo@bar:~$ htop
+```
+![alt text](/slides/img/LinuxApplication/htopFull.png)
+<!-- .slide:class="r-stretch" -->
+
+--
+
+## CPU
+![alt text](/slides/img/LinuxApplication/htopDevice.png)
+- 紅色(優先度高)
+- 綠色
+- 藍色(優先度低)
+
+## 排程
+- First-Come, First-Served(FCFS)
+- Shortest-Job-First(SJF)
+- Priority Scheduling
+
+--
+## 記憶體
+
+![alt text](/slides/img/LinuxApplication/htopDevice.png)
+- 記憶體 使用率
+    - 綠色：被占用的
+    - 藍色：buffer
+    - 橘色：cache pages
+- swap
+    - 當記憶體用的硬碟空間
+
+--
+
+## 下面的東西
+
+![alt text](/slides/img/LinuxApplication/htopProcess.png)
