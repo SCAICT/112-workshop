@@ -43,8 +43,7 @@ Each Chen
 ---
 
 ## Vim
-- Unix 系統內建文字編輯器(更好用的記事本)
-- 只用鍵盤的文字編輯器
+- 只用鍵盤的文字編輯器(更多功能的記事本)
 - 在鍵盤上打 combo
 - 插件多，自由度高
 
@@ -53,7 +52,7 @@ Each Chen
 --
 
 ## 這有什麼用？
-- Unix 系統裡面的預設文字編輯器
+- Linux 系統裡面的預設文字編輯器
 - 程式操作介面是 vim (git)
 - ~~讓你看起來更像駭客~~
 - ~~毛哥說不要教 nano~~
@@ -170,6 +169,121 @@ foo@bar:~$ htop
 
 --
 
-## 下面的東西
+## 正在執行的東西
 
 ![alt text](/slides/img/LinuxApplication/htopProcess.png)
+
+---
+
+## 資料庫
+#### 存資料的地方
+
+--
+
+ ### 關聯式資料庫
+- 使用表格(行+列)儲存資料
+- 可在不同表格間關聯
+- Database>Table>datas(a row)
+    - MySQL
+    - oracle
+--
+
+### 非關聯式資料庫
+- 不是關聯式資料庫就被歸類到這
+    - MogoDB
+    - Redis
+--
+## What is SQL？
+- Structured Query Language
+- 存取、查詢資料庫的程式語言
+
+--
+
+## 在 Linux 安裝MySQL
+```sh
+sudo apt install mysql-server -y
+sudo mysql_secure_installation
+```
+
+---
+## 操作 SQL server
+
+--
+
+## 現在的資料庫
+
+![sqltable](/slides/img/LinuxApplication/sqltable.png)
+<!-- .slide:class="r-stretch" -->
+--
+## 建立資料庫
+```sql
+CREATE DATABASE `SCAICT`;--建立USER資料庫
+
+SHOW DATABASES;
+
+DROP DATABASE  `SCAICT`;
+```
+--
+
+## 創建表格
+```sql
+USE `SCAICT`;--選擇資料庫
+CREATE TABLE Member (
+    uid INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(50) NOT NULL,
+    point int DEFAULT 0,
+    teach VARCHAR(10) DEFAULT NULL,
+    --PRIMARY KEY(`uid`)
+);
+
+DESCRIBE `Member`;
+ALTER TABLE `Member` ADD joinTime DATETIME;
+ALTER TABLE `Member` DROP joinTime DATETIME;
+DROP TABLE `Member`;
+```
+
+--
+## 資料型別
+```
+INT 
+BIGINT
+VARCHAR(n)
+DATE    --'YYYY-MM-DD'
+DATETIME --'YYYY-MM-DD HH:MM;SS'
+...
+```
+
+--
+
+## 新增資料
+```sql
+INSERT INTO `Member` VALUES(5,"each",10,"Linux","2024-05-26 23:59:59");
+INSERT INTO `Member`(`name`,`teach`,`point`) VALUES('EM',"CSS",600);
+```
+
+--
+## 搜尋資料
+```sql
+SELECT * from `Member`;
+SELECT * from `Member` WHERE `uid`=5;
+```
+
+--
+## 更改資料
+```sql
+UPDATE `Member` SET `teach`="SQL"; --where name="each" 
+```
+
+--
+
+## 建立使用者
+```sql
+-- 創建新使用者
+CREATE USER 'newuser'@'localhost' IDENTIFIED BY 'password';
+
+-- 賦予使用者權限
+GRANT ALL PRIVILEGES ON mydatabase.* TO 'newuser'@'localhost';
+
+-- 刷新權限
+FLUSH PRIVILEGES;
+```
