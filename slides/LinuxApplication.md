@@ -54,9 +54,9 @@ Each Chen
 ## 這有什麼用？
 - Linux 系統裡面的預設文字編輯器
 - 程式操作介面是 vim (git)
+- ~~考 APCS 的時候可用~~
 - ~~讓你看起來更像駭客~~
 - ~~毛哥說不要教 nano~~
-
 
 
 --
@@ -82,6 +82,8 @@ i #移動到游標字後面
 
 ## vim 指令(command mode)
 ```
+:q #放我出去
+:w #儲存檔案
 
 ```
 
@@ -90,9 +92,10 @@ i #移動到游標字後面
 
 ##  vim 指令(normal mode)
 ```
-:q #放我出去
-:w #儲存檔案
-P/p #在上/下方一行貼上(從 vim 的)
+u      #上一步
+ctrl+r #下一步
+P/p    #在上/下方一行貼上(從 vim 的)
+100p   #貼上重複 100 次
 d 剪下一行
 x 剪下一個字(當刪除用)
 yy 複製一行
@@ -172,6 +175,9 @@ foo@bar:~$ htop
 ## 正在執行的東西
 
 ![alt text](/slides/img/LinuxApplication/htopProcess.png)
+
+---
+# pm2
 
 ---
 
