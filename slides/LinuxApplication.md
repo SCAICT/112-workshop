@@ -139,7 +139,7 @@ hjkl #左下上右移動
 
 ---
 <!-- .slide: data-background-image="../slides/img/LinuxApplication/boss.jpg" data-background-opacity="0.4" data-auto-animate -->
-# process manager
+# Process Manager
 ##### 大統領，你是系統的主宰
 
 --
@@ -182,11 +182,12 @@ foo@bar:~$ htop
 ![alt text](../slides/img/LinuxApplication/htopProcess.png)
 
 
+
 ---
 
 ## 資料庫
 #### 存資料的地方
-
+![sqldemo](../slides/img/LinuxApplication/sqldemo.png)
 --
 
  ### 關聯式資料庫
@@ -207,6 +208,19 @@ foo@bar:~$ htop
 - 存取、查詢資料庫的程式語言
 
 --
+## 主鍵 Primary key
+- 整張表唯一不重複的值
+- 區分每個列
+--
+## 外鍵 Foreign key
+- 關聯表格
+- 通常會對應到另一張表的 Primary key
+--
+
+## 舉個例子
+![sqlSCAICT](../slides/img/LinuxApplication/sqlSCAICT.png)
+<!-- .slide:class="r-stretch" -->
+--
 
 ## 在 Linux 安裝MySQL
 ```sh
@@ -219,7 +233,7 @@ sudo mysql_secure_installation
 
 --
 
-## 現在的資料庫
+## 按圖施工
 
 ![sqltable](../slides/img/LinuxApplication/sqltable.png)
 <!-- .slide:class="r-stretch" -->
@@ -285,6 +299,14 @@ UPDATE `Member` SET `teach`="SQL"; --where name="each"
 
 --
 
+## 刪除
+```sql
+-- 刪除表格內的資料
+DELETE  FROM [Table];--where ...
+--刪除整個表格
+DROP TABLE [Table];
+```
+--
 ## 建立使用者
 ```sql
 -- 創建新使用者
@@ -302,3 +324,52 @@ FLUSH PRIVILEGES;
 ```
 SHOW CREATE TABLE [tableName]
 ```
+
+---
+# 進階 SQL 技巧
+
+--
+
+## Link Start！
+![dataTable](../slides/img/LinuxApplication/link_Start.png)
+
+--
+
+## 關聯
+```sql
+CREATE TABLE `ctf_data` (
+  `id` bigint NOT NULL,
+  `flags` varchar(255) DEFAULT NULL,
+  `score` int DEFAULT NULL,
+  `restrictions` varchar(255) DEFAULT NULL,
+  `message_id` bigint DEFAULT NULL,
+  `case_status` tinyint(1) DEFAULT NULL,
+  `start_time` datetime DEFAULT NULL,
+  `end_time` varchar(255) DEFAULT NULL,
+  `title` varchar(255) DEFAULT NULL,
+  `tried` int DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) 
+
+ CREATE TABLE `ctf_history` (
+  `data_id` bigint DEFAULT NULL,
+  `uid` bigint DEFAULT NULL,
+  `count` int DEFAULT NULL,
+  `solved` tinyint(1) NOT NULL DEFAULT '0',
+  KEY `data_id` (`data_id`),
+  FOREIGN KEY (`data_id`) REFERENCES `ctf_data` (`id`) ON DELETE CASCADE
+) 
+```
+--
+
+## 外鍵
+- ON DELETE SET NULL
+- ON DELETE CASCADE
+
+--
+## 再看一次
+![sqlSCAICT](../slides/img/LinuxApplication/sqlSCAICT.png)
+
+---
+
+# 練習時間
