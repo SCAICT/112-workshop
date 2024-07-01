@@ -39,7 +39,8 @@
 
 ---
 現在你已經有一個網頁了
-# 進入基本 HTML 教學:)
+# 進入基本  
+# HTML 教學:)
 
 ---
 
@@ -283,7 +284,10 @@ H<sup>+</sup> CO<sub>2</sub>
     <td>Swedish</td>
   </tr>
 </table>
+
 ---
+
+<h1> 表單 </h1>
 <form action = "/submit"
       method = "post">    
   <input type="number"

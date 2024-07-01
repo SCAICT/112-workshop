@@ -10,21 +10,21 @@ Each Chen
 
 ## [MobaXterm](https:#mobaxterm.mobatek.net/download.html)
 
-| <ul><li>視覺化 SSH client</li><li>連線管理、主機監控</li><li>有顏色的 CMD</li></ul> | ![MobaXterm](/slides/img/LinuxApplication/mobaxterm.jpg) <!-- .element: height="200px" -->|
+| <ul><li>視覺化 SSH client</li><li>連線管理、主機監控</li><li>有顏色的 CMD</li></ul> | ![MobaXterm](../slides/img/LinuxApplication/mobaxterm.jpg) <!-- .element: height="200px" -->|
 |:---:|:-:|
 
 
 --
 
 ## 安裝它 
-<img class="r-stretch" src="/slides/img/LinuxApplication/installMobaxterm.jpg" />
+<img class="r-stretch" src="../slides/img/LinuxApplication/installMobaxterm.jpg" />
 
 
 --
 
 
 ## 建立連線
-<img class="r-stretch" src="/slides/img/LinuxApplication/linkStart.png" />
+<img class="r-stretch" src="../slides/img/LinuxApplication/linkStart.png" />
 
 
 
@@ -41,13 +41,17 @@ Each Chen
 
 
 ---
+## 文字編輯器
+- 插入文字
+- 更改文字
+- 刪除文字
 
-## Vim
-- 只用鍵盤的文字編輯器(更多功能的記事本)
-- 在鍵盤上打 combo
-- 插件多，自由度高
-
-
+--
+## Vi & Vim
+- vi
+    - Unix 上的編輯器
+- vim
+    - vi 的升級版
 
 --
 
@@ -61,26 +65,28 @@ Each Chen
 
 --
 
+## 命令規則
+- 大小寫區分
+- 不會顯示在螢幕上
+- 不用按 enter 執行 
+- 通常是該動作的縮寫，簡單好記
+
+--
+
 ## 用 vim 開啟檔案
 ```
-vim <fileNmae>
+vim [fileNmae]
 ```
-
-
 
 --
 
-##  vim 指令(insert mode)
-```
-a(insert) #移動到游標字前面
-i #移動到游標字後面
-```
 
-
+<!-- .slide:class="r-stretch" -->
+![exit vim](../slides/img/LinuxApplication/vimExit.png)
 
 --
 
-## vim 指令(command mode)
+## basic command mode
 ```
 :q #放我出去
 :w #儲存檔案
@@ -90,12 +96,22 @@ i #移動到游標字後面
 
 --
 
-##  vim 指令(normal mode)
+##  進入 insert mode
 ```
-u      #上一步
-ctrl+r #下一步
-P/p    #在上/下方一行貼上(從 vim 的)
-100p   #貼上重複 100 次
+a(insert) #移動到游標字前面
+i         #移動到游標字後面
+```
+
+--
+
+
+##  normal mode
+```
+u#上一步
+Ctrl-r #下一步
+
+P/p#在上/下方一行貼上(從 vim 的)
+100p#貼上重複 100 次
 d 剪下一行
 x 剪下一個字(當刪除用)
 yy 複製一行
@@ -112,20 +128,9 @@ gg #移動到第一行
 G #移動到行尾
 /<target> #向下尋找目標
 N/n #向上/下尋找
-0 #移動到該行最左邊
-```
-
-
-
---
-
-### 你可能不會用到的東西
-#### vi的指令
-
-```
+0/$ #移動到該行首/尾
 hjkl #左下上右移動
-``` 
-
+```
 
 --
 
@@ -133,7 +138,7 @@ hjkl #左下上右移動
 [這裡有教學](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
 
 ---
-<!-- .slide: data-background-image="/slides/img/LinuxApplication/boss.jpg" data-background-opacity="0.4" data-auto-animate -->
+<!-- .slide: data-background-image="../slides/img/LinuxApplication/boss.jpg" data-background-opacity="0.4" data-auto-animate -->
 # process manager
 ##### 大統領，你是系統的主宰
 
@@ -143,13 +148,13 @@ hjkl #左下上右移動
 ```bat
 foo@bar:~$ htop
 ```
-![alt text](/slides/img/LinuxApplication/htopFull.png)
+![alt text](../slides/img/LinuxApplication/htopFull.png)
 <!-- .slide:class="r-stretch" -->
 
 --
 
 ## CPU
-![alt text](/slides/img/LinuxApplication/htopDevice.png)
+![alt text](../slides/img/LinuxApplication/htopDevice.png)
 - 紅色(優先度高)
 - 綠色
 - 藍色(優先度低)
@@ -162,7 +167,7 @@ foo@bar:~$ htop
 --
 ## 記憶體
 
-![alt text](/slides/img/LinuxApplication/htopDevice.png)
+![alt text](../slides/img/LinuxApplication/htopDevice.png)
 - 記憶體 使用率
     - 綠色：被占用的
     - 藍色：buffer
@@ -174,10 +179,8 @@ foo@bar:~$ htop
 
 ## 正在執行的東西
 
-![alt text](/slides/img/LinuxApplication/htopProcess.png)
+![alt text](../slides/img/LinuxApplication/htopProcess.png)
 
----
-# pm2
 
 ---
 
@@ -218,7 +221,7 @@ sudo mysql_secure_installation
 
 ## 現在的資料庫
 
-![sqltable](/slides/img/LinuxApplication/sqltable.png)
+![sqltable](../slides/img/LinuxApplication/sqltable.png)
 <!-- .slide:class="r-stretch" -->
 --
 ## 建立資料庫
@@ -292,4 +295,10 @@ GRANT ALL PRIVILEGES ON mydatabase.* TO 'newuser'@'localhost';
 
 -- 刷新權限
 FLUSH PRIVILEGES;
+```
+
+--
+## 分析前人寫的東西
+```
+SHOW CREATE TABLE [tableName]
 ```
