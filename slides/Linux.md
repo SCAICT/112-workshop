@@ -6,7 +6,7 @@
 # linux介紹
 ## What is linux?
 
-----
+--
 
 ## What is linux?
 - 開源操作系統
@@ -34,7 +34,7 @@
 - 查看當前目錄下的檔案
 ![image](https://hackmd.io/_uploads/HyrOFw2rC.png)
 
-----
+--
 
 ## 基本指令- ls
 - 參數 -a
@@ -43,7 +43,7 @@
 - 垂直顯示列表
 - 常見用法 ls-al
 
-----
+--
 
 ![image](https://hackmd.io/_uploads/rkQ8sPhHR.png)
 
@@ -56,12 +56,12 @@
 - 絕對路徑
 ![image](https://hackmd.io/_uploads/ByWprd2H0.png)
 
-----
+--
 
 ## 基本指令- cd
 ![image](https://hackmd.io/_uploads/HkYjwtnBR.png)
 
-----
+--
 
 ## 基本指令- cd
 相對路徑
@@ -92,14 +92,14 @@
 ![image](https://hackmd.io/_uploads/S1wAOcnH0.png)
 
 
-----
+--
 
 ##  NANO
 - 簡單易用
 - 預設安裝
 - 適合新手(我就菜)
 
-----
+--
 
 ## NANO
 - 打開就可以編輯
@@ -108,14 +108,14 @@
 ![image](https://hackmd.io/_uploads/BJ-HQ53SC.png)
 
 
-----
+--
 
 ## VIM
 - 功能強大
 - 整個鍵盤都是快捷鍵
 - 較難上手
 
-----
+--
 
 ## VIM
 - i : 編輯模式
@@ -125,7 +125,7 @@
 - :q! 強制退出
 - :wq 保存加退出
 
-----
+--
 
 ![image](https://hackmd.io/_uploads/BJiHw5nr0.png)
 
@@ -156,18 +156,18 @@
 ## 基本指令- chmod
 ![螢幕擷取畫面 2024-06-17 012205](https://hackmd.io/_uploads/rkY_JinHR.png)
 
-----
+--
 
 ## 基本指令- chmod
 ![螢幕擷取畫面 2024-06-17 012119](https://hackmd.io/_uploads/r1hYyo3H0.png)
 
-----
+--
 
 ## 基本指令- chmod
 ![image](https://hackmd.io/_uploads/S1h1ljhBR.png)
 
 
-----
+--
 
 ## 基本指令- chmod
 ![image](https://hackmd.io/_uploads/H14GxjnBC.png)
