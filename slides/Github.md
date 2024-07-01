@@ -125,32 +125,21 @@ GitHub上的Repositorty
 
 --
 
-按下"Code"後會有一串網址
-
-我們用這個網址進行clone
-
-![](../slides/img/GitHub/basic5.png)
-
---
-
-在cmd使用指令clone
-
-注意"Repo網址"是剛剛的那個網址
-
-不是GitHub頁面的網址
-```
-git clone [Repo網址]
-```
-
---
-
 clone下來後本機就會多出一個資料夾
 
 ![](../slides/img/GitHub/basic6.png)<!-- .element: height="400px" -->
 
 --
 
-### 3. Pull
+### 3. Push
+當修改完程式碼
+
+就能上傳到GitHub上
+![](../slides/img/GitHub/github5.png)
+
+--
+
+### 4. Pull
 如果本機原本就已經有Repo
 
 能用Pull獲得GitHub上的最新版本
@@ -159,14 +148,7 @@ clone下來後本機就會多出一個資料夾
 
 --
 
-在本機的資料夾中的cmd使用指令
-```
-git pull
-```
-
---
-
-### 4. Fork 
+### 5. Fork 
 將別人的Repository複製一份給自己
 
 這樣就能在不影響Origin的狀況下自由開發
@@ -184,21 +166,6 @@ git pull
 按下去就能建立Forked Repo
 
 ![](../slides/img/GitHub/basic8.png)
-
---
-
-### 5. Push
-當修改完程式碼
-
-就能上傳到GitHub上的Repo
-![](../slides/img/GitHub/github5.png)
-
---
-
-在本機的資料夾中的cmd使用指令
-```
-git push
-```
 
 --
 
