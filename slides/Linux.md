@@ -1,23 +1,25 @@
-# linux基礎教學
+<!-- @format -->
+<!-- .slide:class="r-fit-text" -->
+# Linux基礎教學
 ## 中電會113屆幹訓
 
 ---
 
-# linux介紹
-## What is linux?
+# Linux介紹
+## What is Linux?
 
 --
 
-## What is linux?
+## What is Linux?
 - 開源操作系統
 - 使用UNIX開發(Mac OS也是!)
-- 許多開源軟體、駭客工具都支援linux系統
+- 許多開源軟體、駭客工具都支援Linux系統
 - 允許多個使用者同時登入
 - CLI介面
 
 ---
 
-# linux基本指令
+# Linux基本指令
 ## 終於要開始了
 
 ---
@@ -26,8 +28,10 @@
 ### 我是誰?我在哪?
 - whoami-顯示使用者(沒啥用)
 - pwd-顯示目前所在的目錄
-![image](https://hackmd.io/_uploads/HkBbKP3HC.png)
+<br>
 
+![image](https://hackmd.io/_uploads/HkBbKP3HC.png)
+<!-- .slide:style="display:block -->
 ---
 
 ## 基本指令- ls
@@ -54,8 +58,10 @@
 - 切換資料夾路徑
 - cd [資料夾路徑]
 - 絕對路徑
-![image](https://hackmd.io/_uploads/ByWprd2H0.png)
+<br>
 
+![image](https://hackmd.io/_uploads/ByWprd2H0.png)
+<!-- .slide:style="display:block -->
 --
 
 ## 基本指令- cd
@@ -68,8 +74,10 @@
 - ~ >家目錄
 - .  >本層目錄
 - ..>上層目錄
-![image](https://hackmd.io/_uploads/rJSNKKhHA.png)
+<br>
 
+![image](https://hackmd.io/_uploads/rJSNKKhHA.png)
+<!-- .slide:style="display:block -->
 ---
 
 ## 基本指令- cat
@@ -168,7 +176,7 @@
 ---
 
 ## 基本指令- ssh
-- 連線至遠端的linux伺服器
+- 連線至遠端的Linux伺服器
 - -p 連接端口
 ![image](https://hackmd.io/_uploads/BkPvhc2HA.png)
 
