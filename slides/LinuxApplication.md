@@ -181,7 +181,30 @@ foo@bar:~$ htop
 
 ![alt text](../slides/img/LinuxApplication/htopProcess.png)
 
+---
+# pm2
 
+--
+
+## 這是啥？
+管理 Node.js 程序的工具
+--
+## 安裝它
+```bash
+npm install pm2 -g
+```
+
+--
+## 常用指令
+pm2 list
+- 查看當前啟動的程序
+```bash
+pm2 list
+```
+- 啟動服務
+```bash
+pm2 start {app_name}
+```
 
 ---
 
