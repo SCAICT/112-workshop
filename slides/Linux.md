@@ -103,13 +103,20 @@
 ##  基本指令- mkdir
 - 建立資料夾
 - mkdir [資料夾路徑]
+<br>
+
 ![image](https://hackmd.io/_uploads/HJPqaF3rA.png)
+<!-- .slide:style="display:flex -->
 
 ---
 
 ## 基本指令- vim、nano
 先說，我是nano派的
+<br>
+
 ![image](https://hackmd.io/_uploads/SkYoPc3rC.png)
+<!-- .slide:style="display:block -->
+
 ![image](https://hackmd.io/_uploads/S1wAOcnH0.png)
 
 
@@ -170,8 +177,11 @@
 ## 基本指令- sudo
 - 以最高權限執行
 - sudo [指令]
-![image](https://hackmd.io/_uploads/rkvjpchBR.png)
 
+--
+
+![image](https://hackmd.io/_uploads/rkvjpchBR.png)
+<!-- .slide:class="r-stretch" -->
 ---
 
 ## 基本指令- chmod
