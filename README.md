@@ -6,4 +6,4 @@
 
 網頁全是靜態資源，撰寫時可使用任意 HTTP 伺服器。如 VSCode Live Server、Python SimpleHTTPServer、Node.js http-server 等。
 
-網址: <g.scaict.org/112-workshop>
+網址: <https://g.scaict.org/112-workshop>
