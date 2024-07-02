@@ -1,3 +1,5 @@
+<!-- @format -->
+<!-- .slide:class="r-fit-text" -->
 # linux基礎教學
 ## 中電會113屆幹訓
 
@@ -26,8 +28,10 @@
 ### 我是誰?我在哪?
 - whoami-顯示使用者(沒啥用)
 - pwd-顯示目前所在的目錄
-![image](https://hackmd.io/_uploads/HkBbKP3HC.png)
+<br>
 
+![image](https://hackmd.io/_uploads/HkBbKP3HC.png)
+<!-- .slide:style="display:block -->
 ---
 
 ## 基本指令- ls
@@ -54,8 +58,10 @@
 - 切換資料夾路徑
 - cd [資料夾路徑]
 - 絕對路徑
-![image](https://hackmd.io/_uploads/ByWprd2H0.png)
+<br>
 
+![image](https://hackmd.io/_uploads/ByWprd2H0.png)
+<!-- .slide:style="display:block -->
 --
 
 ## 基本指令- cd
@@ -68,8 +74,10 @@
 - ~ >家目錄
 - .  >本層目錄
 - ..>上層目錄
-![image](https://hackmd.io/_uploads/rJSNKKhHA.png)
+<br>
 
+![image](https://hackmd.io/_uploads/rJSNKKhHA.png)
+<!-- .slide:style="display:block -->
 ---
 
 ## 基本指令- cat
