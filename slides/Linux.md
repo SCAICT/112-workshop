@@ -1,25 +1,25 @@
 <!-- @format -->
 <!-- .slide:class="r-fit-text" -->
-# linux基礎教學
+# Linux基礎教學
 ## 中電會113屆幹訓
 
 ---
 
-# linux介紹
-## What is linux?
+# Linux介紹
+## What is Linux?
 
 --
 
-## What is linux?
+## What is Linux?
 - 開源操作系統
 - 使用UNIX開發(Mac OS也是!)
-- 許多開源軟體、駭客工具都支援linux系統
+- 許多開源軟體、駭客工具都支援Linux系統
 - 允許多個使用者同時登入
 - CLI介面
 
 ---
 
-# linux基本指令
+# Linux基本指令
 ## 終於要開始了
 
 ---
@@ -176,7 +176,7 @@
 ---
 
 ## 基本指令- ssh
-- 連線至遠端的linux伺服器
+- 連線至遠端的Linux伺服器
 - -p 連接端口
 ![image](https://hackmd.io/_uploads/BkPvhc2HA.png)
 
