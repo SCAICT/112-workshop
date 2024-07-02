@@ -29,6 +29,11 @@
 
 --
 
+### 平常是如何儲存版本的?
+![](../slides/img/GitHub/example.png)
+
+--
+
 ### Git是一種版本控制器（VCS）
 Git由Linus Torvalds開發
 
@@ -43,14 +48,6 @@ Git由Linus Torvalds開發
 * 資料備份
 * 方便比較差異
 * 工作流管理
-
---
-
-### 分支 Branch
-
-![](../slides/img/GitHub/branch.png)
-
-基本上Git的概念就是在開發與合併branch
 
 --
 
@@ -84,13 +81,13 @@ Git在英國俚語是指"不愉快的人"
 
 --
 
-![](../slides/img/GitHub/basic1.png)
+![](../slides/img/GitHub/git_new.png)
 
 --
 
 ### 1. Repository
 存放程式碼的地方
-![](../slides/img/GitHub/github2.png)
+![](../slides/img/GitHub/git_new2.png)
 
 --
 
@@ -115,7 +112,7 @@ Git在英國俚語是指"不愉快的人"
 ### 2. Clone
 將Repository複製到本機以進行修改
 
-![](../slides/img/GitHub/github3.png)
+![](../slides/img/GitHub/git_new3.png)
 
 --
 
@@ -135,55 +132,7 @@ clone下來後本機就會多出一個資料夾
 當修改完程式碼
 
 就能上傳到GitHub上
-![](../slides/img/GitHub/github5.png)
-
---
-
-### 4. Pull
-如果本機原本就已經有Repo
-
-能用Pull獲得GitHub上的最新版本
-
-![](../slides/img/GitHub/github3.png)
-
---
-
-### 5. Fork 
-將別人的Repository複製一份給自己
-
-這樣就能在不影響Origin的狀況下自由開發
-
-![](../slides/img/GitHub/github4.png)
-
---
-
-在別人的Repo裡會有這個按鈕
-
-![](../slides/img/GitHub/basic7.png)
-
---
-
-按下去就能建立Forked Repo
-
-![](../slides/img/GitHub/basic8.png)
-
---
-
-### 6. Pull Request
-如果你是協作他人專案
-
-可以通過PR貢獻自己的code
-
-![](../slides/img/GitHub/github6.png)
-
---
-
-### 6. Pull Request
-如果對方覺得你給的code還行
-
-就會把code合併進他們的專案中
-
-並把你列為協作者
+![](../slides/img/GitHub/git_new4.png)
 
 ---
 
@@ -206,11 +155,44 @@ git --version
 
 --
 
-### 與GitHub連線
+### 註冊GitHub帳號
+
+![](../slides/img/GitHub/start.png)
 
 --
 
-### 一、GitHub Desktop
+### 與GitHub連線
+在VSCode上登錄
+
+--
+
+1. shift+ctrl+p後選clone
+
+![](../slides/img/GitHub/login.png)
+
+--
+
+2. 然後在網頁登錄
+
+![](../slides/img/GitHub/login2.png)<!-- .element: height="500px" -->
+
+
+--
+
+3. 設定使用者資訊
+
+```
+git config user.name [Your Name]
+git config user.email [Your Email]
+```
+
+--
+
+### 其他連線方法
+
+--
+
+### GitHub Desktop
 登入GitHub Desktop就能直接控制Repo
 
 https://desktop.github.com/
@@ -219,7 +201,7 @@ https://desktop.github.com/
 
 --
 
-### 二、使用SSH Key
+### 使用SSH Key
 
 也能通過SSH Key授權控制Repo
 
@@ -288,54 +270,27 @@ cat .\id_ed25519.pub
 --
 
 
-+ 初始化資料夾
-    * init & remote
-    * clone
++ clone
 + commit
-+ branch
 + push
 + pull
++ branch&checkout
++ merge
 
 --
 
-### 1. init & remote
-
-把一個資料夾設置為git追蹤的對象
+### clone
+使用指令複製Repo至本地
 ```
-git init
+git clone [Repo URL]
 ```
-
---
-
-但在init後要選擇控制哪個Repo
-所以用指令remote
-
-```
-git remote add origin [Repo網址]
-```
-
-這邊add指的是「新增控制的目標」
-
-origin是remote端的「別稱」
-
---
-
-![](../slides/img/GitHub/meme2.png)<!-- .element: height="700px" -->
+![](../slides/img/GitHub/usage2.png)
 
 --
 
 我們通常將remote端（如GitHub）稱為Origin
 
 ![](../slides/img/GitHub/usage1.png)
-
---
-
-### 2. clone
-使用指令複製Repo至本地
-```
-git clone [Repo URL]
-```
-![](../slides/img/GitHub/usage2.png)
 
 --
 
@@ -373,8 +328,63 @@ git commit -m "something"
 
 --
 
+![](../slides/img/GitHub/meme3.png)<!-- .element: height="500px" -->
+
+--
+
+### push
+完成工作後
+
+要將code上傳至GitHub
+
+--
+
+使用指令
+```
+git push
+```
+或
+```
+git push origin master
+```
+
+--
+
+![](../slides/img/GitHub/usage4.png)<!-- .element: height="500px" -->
+
+--
+
+![](../slides/img/GitHub/usage11.png)<!-- .element: height="500px" -->
+
+--
+
+### pull
+更新本機上的檔案
+
+--
+
+例如remote端多了一個新的commit
+
+![](../slides/img/GitHub/usage12.png)<!-- .element: height="500px" -->
+
+--
+
+
+使用指令
+```
+git pull
+```
+
+--
+
+檔案就能更新到remote端的版本
+
+![](../slides/img/GitHub/usage13.png)<!-- .element: height="500px" -->
+
+--
+
 ### branch & checkout
-先前有說過Git可以在不同分支上進行開發
+Git可以在不同分支上進行開發
 
 ![](../slides/img/GitHub/branch.png)
 
@@ -474,61 +484,6 @@ git merge [被合併branch_name]
 --
 
 <iframe width="973" height="695" src="https://www.youtube.com/embed/dygYh2qsx64" title="when git merge 😂😂😂 #git #programming memes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
---
-
-### push
-完成工作後
-
-要將code上傳至GitHub
-
---
-
-使用指令
-```
-git push
-```
-或
-```
-git push origin master
-```
-
---
-
-![](../slides/img/GitHub/usage5.png)<!-- .element: height="500px" -->
-
---
-
-![](../slides/img/GitHub/usage11.png)<!-- .element: height="500px" -->
-
---
-
-![](../slides/img/GitHub/meme3.png)<!-- .element: height="500px" -->
-
---
-
-### pull
-更新本機上的檔案
-
---
-
-例如remote端多了一個新的commit
-
-![](../slides/img/GitHub/usage12.png)<!-- .element: height="500px" -->
-
---
-
-
-使用指令
-```
-git pull
-```
-
---
-
-檔案就能更新到remote端的版本
-
-![](../slides/img/GitHub/usage13.png)<!-- .element: height="500px" -->
 
 ---
 
