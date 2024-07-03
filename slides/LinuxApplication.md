@@ -60,9 +60,8 @@ Each Chen
 - 程式操作介面是 vim (git)
 - ~~考 APCS 的時候可用~~
 - ~~讓你看起來更像駭客~~
+- ~~讓任何操作寫起來都像在按必殺技~~
 - ~~毛哥說不要教 nano~~
-
-
 --
 
 ## 命令規則
@@ -85,7 +84,12 @@ vim [fileNmae]
 ![exit vim](../slides/img/LinuxApplication/vimExit.png)
 
 --
+## 講解檔案
+```
+wget -O Hivim "https://cdn.discordapp.com/attachments/1081049500552011827/1258057349214765128/HiVim?ex=6686a8b5&is=66855735&hm=920ba861d2cc359ab671e7f37f3c4a6b41e430c4c53bbb4311723671986d0bd1&"
+```
 
+--
 ## basic command mode
 ```
 :q #放我出去
@@ -115,6 +119,9 @@ P/p#在上/下方一行貼上(從 vim 的)
 d 剪下一行
 x 剪下一個字(當刪除用)
 yy 複製一行
+
+~ 大小寫轉換
+v/V 選取(一行)
 ```
 
 
@@ -131,9 +138,28 @@ N/n #向上/下尋找
 0/$ #移動到該行首/尾
 hjkl #左下上右移動
 ```
+---
+# 練習時間
 
 --
+## Discord->ctf->2024幹訓
+```bash
+wget -O vim-lab "https://cdn.discordapp.com/attachments/1199626835319869550/1257550572912115772/vim-ctf?ex=6686223c&is=6684d0bc&hm=abcb568a14adf4c77ea60e63572be3f0cb1748794ed880b307674677ce1e9b39&"
+```
 
+--
+## 密技
+```bash
+wget -O code.cpp "https://cdn.discordapp.com/attachments/1081049500552011827/1258070012208611420/code.cpp?ex=6686b480&is=66856300&hm=3325d013081d56b6df1c1d881f37e4b90b6c0822ea7236485c85959762021075&"
+```
+```
+shift+j #合併上下行
+<number>shift+j #把接下來 number 行的換行鍵刪掉
+>> #
+gg=GG #自動縮排
+```
+
+--
 ### 教不完了，念指令好無聊，這些目前夠用了
 [這裡有教學](https://yannesposito.com/Scratch/en/blog/Learn-Vim-Progressively/)
 
@@ -395,4 +421,3 @@ CREATE TABLE `ctf_data` (
 
 ---
 
-# 練習時間
